@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Chat Assistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="https://app.vectorshift.ai/chatbots/embedded/69fa933c643eab81063f8418?openChatbot=true" width="500px" height="600px" style="border: none; position: fixed; bottom: 0; right: 0; margin: 10px;" allow="clipboard-read; clipboard-write; microphone"/>
+</body>
+</html>
