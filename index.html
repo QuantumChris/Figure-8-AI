@@ -18,7 +18,7 @@
             background: #ffffff;
         }
         #wrapper {
-            width: calc(100% + 205px);
+            width: 100%;
             height: 100%;
             overflow: hidden;
             position: relative;
@@ -26,18 +26,19 @@
         iframe {
             border: none;
             height: 100%;
-            width: 100%;
+            width: calc(100% + 205px);
             position: absolute;
-            left: 0;
-            transform: translateX(-205px);
-            transition: transform 0.3s ease, opacity 0.3s ease;
+            top: 0;
+            left: -205px;
+            transition: left 0.3s ease, width 0.3s ease, opacity 0.3s ease;
             opacity: 0;
         }
         iframe.loaded {
             opacity: 1;
         }
         iframe.sidebar-open {
-            transform: translateX(0);
+            left: 0;
+            width: 100%;
         }
         #toggle-btn {
             position: fixed;
@@ -108,7 +109,9 @@
         <iframe
             id="chat-frame"
             src="https://app.vectorshift.ai/chatbots/deployed/69fa933c643eab81063f8418"
-            allow="clipboard-read; clipboard-write; microphone">
+            allow="clipboard-read; clipboard-write; microphone; camera; fullscreen"
+            referrerpolicy="no-referrer-when-downgrade"
+            sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-modals allow-downloads">
         </iframe>
     </div>
 
