@@ -15,16 +15,17 @@
             height: 100%;
             overflow: hidden;
         }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
     </style>
 </head>
 <body>
-    <script 
-        async 
-        id="vectorshift-chat-widget" 
-        src="https://app.vectorshift.ai/chatWidget.js" 
-        chatbot-id="69fa933c643eab81063f8418" 
-        chatbot-height="100%" 
-        chatbot-width="100%"
-    ></script>
+    <iframe
+        src="https://app.vectorshift.ai/chatbots/deployed/69fa933c643eab81063f8418"
+        allow="clipboard-read; clipboard-write; microphone">
+    </iframe>
 </body>
 </html>
